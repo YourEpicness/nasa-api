@@ -22,3 +22,8 @@ To run both client and servers at same time in dev use:
     "server": "npm run dev --prefix server",
     "client": "npm start --prefix client",
     "dev": "npm run server & npm run client"
+
+
+# Order
+1. Add model first to figure out what data we need
+2. Add router next
