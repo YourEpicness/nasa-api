@@ -4,8 +4,14 @@
   "description": "---\r A project to create an API that interacts with NASA's API. Follow along from zerotomastery.io",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "install-server":"npm install --prefix server",
+    "instlal-client":"npm install --prefix client",
+    "install": "concurrently \"npm run install-server\" \"npm run install-client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\""
+    
   },
   "repository": {
     "type": "git",
