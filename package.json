@@ -1,0 +1,21 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "---\r A project to create an API that interacts with NASA's API. Follow along from zerotomastery.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourEpicness/nasa-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YourEpicness/nasa-api/issues"
+  },
+  "homepage": "https://github.com/YourEpicness/nasa-api#readme"
+}
