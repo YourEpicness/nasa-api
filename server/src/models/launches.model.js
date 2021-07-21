@@ -7,13 +7,17 @@ const launch = {
     mission: 'Kepler ExX',
     rocket: 'Explorer IS1',
     launchDate: new Date('December 27th, 2030'),
-    destination: 'Kepler-442 b',
+    target: 'Kepler-442 b',
     customer: ['ZTM', 'NASA'],
     upcoming: true,
     success: true,
 };
 
 launches.set(launch.flightNumber, launch);
+
+function existsLaunchWithId(launchId) {
+    return launches.has(launchId);
+}
 
 function getAllLaunches() {
     return Array.from(launches.values());
@@ -22,7 +26,7 @@ function getAllLaunches() {
 function addNewLaunch(launch) {
     latestFlightNumber++;
     // setting default field values
-    launches.set(launch.flightnumber, Object.assign(launch, {
+    launches.set(latestFlightNumber, Object.assign(launch, {
         success: true,
         upcoming: true,
         customers: ['Zero To Mastery', 'NASA'],
@@ -30,8 +34,17 @@ function addNewLaunch(launch) {
     }));
 }
 
+function abortLaunchById(launchId) {
+    // launches.delete(launchId);
+    const aborted = launches.get(launchId);
+    aborted.upcoming = false;
+    aborted.success = false;
+    return aborted;
+}
+
 module.exports = {
-    launches,
+    existsLaunchWithId,
     getAllLaunches,
-    addNewLaunch
+    addNewLaunch,
+    abortLaunchById
 }

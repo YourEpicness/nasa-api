@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/YourEpicness/nasa-api/issues"
   },
-  "homepage": "https://github.com/YourEpicness/nasa-api#readme"
+  "homepage": "https://github.com/YourEpicness/nasa-api#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
