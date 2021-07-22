@@ -8,7 +8,8 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\"",
-    "deploy": "concurrently \"npm run build --prefix client\" \"npm start --prefix server\""
+    "deploy": "concurrently \"npm run build --prefix client\" \"npm start --prefix server\"",
+    "dev-cluster": "concurrently \"npm run client\" \"npm run cluster --prefix server\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/YourEpicness/nasa-api#readme",
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "jest": "^27.0.6"
   }
 }
