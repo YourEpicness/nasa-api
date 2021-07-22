@@ -52,7 +52,7 @@ function loadPlanetsData() {
 async function getAllPlanets() {
     // mongoose.find is powerful and useful
     return await planets.find({}, {
-        _id: 0, __v:0
+        '_id': 0, '__v':0
     });
 }
 
