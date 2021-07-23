@@ -6,6 +6,7 @@
 server/node_modules
 
 /.pnp
+.env
 .pnp.js
 
 # testing

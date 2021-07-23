@@ -3,6 +3,9 @@ const { Console } = require('console');
 const app = require('./app');
 const http = require('http');
 
+// populates process.env with necessary keys
+require('dotenv').config();
+
 const {mongoConnect} = require('./services/mongo')
 
 const {loadPlanetsData} = require('./models/planets.model')
