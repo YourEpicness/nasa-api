@@ -4,6 +4,9 @@
   "description": "---\r A project to create an API that interacts with NASA's API. Follow along from zerotomastery.io",
   "main": "server.js",
   "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
     "server": "npm run dev --prefix server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
