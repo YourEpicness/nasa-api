@@ -37,4 +37,4 @@ This project taught me how to set up a REST API using NodeJs. I learned how to d
 
 Warning: may get a warning over certificate due to using self-signed certificate
 
-[Live site](https://34.221.214.66:8000)
+[Live site](http://34.221.214.66:8000)
